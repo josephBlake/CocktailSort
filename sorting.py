@@ -15,7 +15,7 @@ class CocktailShaker:
                 break
             swapped = False
             # Do swapping in the other direction.
-            for i in range(len(theArray) - 1, 0, -1):
+            for i in range(len(theArray) - 2, 0, -1):
                 if theArray[i] > theArray[i + 1]:
                     temp = theArray[i]
                     theArray[i] = theArray[i + 1]

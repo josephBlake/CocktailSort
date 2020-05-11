@@ -8,8 +8,6 @@ class CocktailShakerTests(unittest.TestCase):
         array.sort()
         sorted = array[:]
         CocktailShaker.cocktail_shaker_sort(array)
-        print(array)
-        print(sorted)
         self.assertEqual(len(sorted), len(array))
 
     def test_reverse_sorted_case(self):
@@ -18,8 +16,6 @@ class CocktailShakerTests(unittest.TestCase):
         sorted = array[:]
         sorted.sort()
         CocktailShaker.cocktail_shaker_sort(array)
-        print(array)
-        print(sorted)
         self.assertEqual(len(sorted), len(array))
 
     def test_random_case(self):
@@ -28,8 +24,6 @@ class CocktailShakerTests(unittest.TestCase):
         sorted = array[:]
         sorted.sort()
         CocktailShaker.cocktail_shaker_sort(array)
-        print(array)
-        print(sorted)
         self.assertEqual(len(sorted), len(array))
 
 if __name__ == "__main__":
