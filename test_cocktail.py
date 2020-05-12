@@ -26,5 +26,15 @@ class CocktailShakerTests(unittest.TestCase):
         CocktailShaker.cocktail_shaker_sort(array)
         self.assertEqual(len(sorted), len(array))
 
+    def test_duplicate_elements(self):
+        array = [random.random() for x in range(100)]
+        random.shuffle(array)
+        array[0] = 1
+        array[1] = 1
+        sorted = array[:]
+        sorted.sort()
+        CocktailShaker.cocktail_shaker_sort(array)
+        self.assertEqual(len(sorted), len(array))
+
 if __name__ == "__main__":
     unittest.main()
